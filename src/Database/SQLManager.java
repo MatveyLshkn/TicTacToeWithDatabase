@@ -103,7 +103,7 @@ public class SQLManager {
             int wins = result.getInt("wins");
             int losses = result.getInt("losses");
             int draws = result.getInt("draws");
-            System.out.printf("%s-s stats: win rate: %d%%, games: %d, wins: %d, losses: %d, draws: %d\n", player.getName(), (100 * wins / games), games, wins, losses, draws);
+            System.out.printf("\n%s's stats: \nwin rate: %d%%, games: %d, wins: %d, losses: %d, draws: %d\n", player.getName(), (100 * wins / games), games, wins, losses, draws);
         } catch (SQLException e) {
             e.printStackTrace();
         }
